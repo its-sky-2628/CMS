@@ -1,2 +1,122 @@
 /* Global styles live in index.css (Tailwind). This file is reserved for
    component-level overrides if the design system ever needs them. */
+
+/* Restore compact original dashboard proportions */
+:root {
+  font-family: Arial, "Helvetica Neue", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-size: 12px;
+}
+
+aside.fixed.inset-y-0.left-0 {
+  width: 212px !important;
+  border-color: #e7edf4 !important;
+}
+
+aside.fixed.inset-y-0.left-0 > div:first-child {
+  height: 54px !important;
+  padding-left: 16px !important;
+  padding-right: 12px !important;
+}
+
+aside.fixed.inset-y-0.left-0 nav {
+  padding: 12px 10px !important;
+}
+
+aside.fixed.inset-y-0.left-0 nav a {
+  min-height: 34px;
+  padding: 8px 10px !important;
+  gap: 10px !important;
+  font-size: 12px !important;
+}
+
+aside.fixed.inset-y-0.left-0 nav a svg {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.lg\:pl-64 {
+  padding-left: 212px !important;
+}
+
+header.sticky.top-0,
+header.sticky.top-0 > div {
+  height: 54px !important;
+}
+
+header.sticky.top-0 > div {
+  padding-left: 26px !important;
+  padding-right: 24px !important;
+}
+
+header.sticky.top-0 h1 {
+  font-size: 13px !important;
+  font-weight: 700 !important;
+}
+
+main.px-4 {
+  padding: 22px 24px 24px 26px !important;
+}
+
+.space-y-6 {
+  gap: 18px !important;
+}
+
+.space-y-6 > * + * {
+  margin-top: 0 !important;
+}
+
+.space-y-6 h2 {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+}
+
+.rounded-xl.border.border-slate-200.bg-white.p-5 {
+  padding: 16px !important;
+  border-radius: 10px !important;
+  border-color: #e1e7ef !important;
+  box-shadow: 0 1px 2px rgb(15 23 42 / 8%) !important;
+}
+
+.rounded-xl.border.border-slate-200.bg-white.p-5 p.text-sm {
+  font-size: 11px !important;
+}
+
+.rounded-xl.border.border-slate-200.bg-white.p-5 p.text-2xl {
+  margin-top: 6px !important;
+  font-size: 25px !important;
+  font-weight: 700 !important;
+}
+
+.rounded-xl.border.border-slate-200.bg-white.p-5 p.mt-3 {
+  margin-top: 8px !important;
+  font-size: 10px !important;
+}
+
+.rounded-xl.border.border-slate-200.bg-white.p-5 span.h-11 {
+  width: 38px !important;
+  height: 38px !important;
+}
+
+.grid.grid-cols-1.gap-4.sm\:grid-cols-2.xl\:grid-cols-4,
+.grid.grid-cols-1.gap-4.xl\:grid-cols-2 {
+  gap: 12px !important;
+}
+
+@media (max-width: 1023px) {
+  .lg\:pl-64 {
+    padding-left: 0 !important;
+  }
+
+  main.px-4 {
+    padding: 18px 16px !important;
+  }
+
+  aside.fixed.inset-y-0.left-0 {
+    width: 256px !important;
+  }
+}
